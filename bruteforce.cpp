@@ -5,7 +5,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <vector>
-class Bruteforce
+class BruteForce
 {
 public:
     std::vector<std::pair<int, int>> generateRandomPoints(int n)
@@ -21,9 +21,9 @@ public:
         }
         return points;
     }
-    void bruteforce(const std::vector<std::pair<int, int>> &points)
+    void bruteForce(const std::vector<std::pair<int, int>> &points)
     {
-        float smallestDistance = std::numeric_limits<float>::max(); //large number
+        float smallestDistance = std::numeric_limits<float>::max(); 
         std::pair<int, int> closestPair[2];
         int length = points.size();
 
