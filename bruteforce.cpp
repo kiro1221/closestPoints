@@ -6,15 +6,14 @@
 #include <chrono> 
 using namespace std::chrono;
 struct Point {
-    int x, y;
+    double x, y;
 };
 double calculate_distance(const Point &a, const Point &b) {
     return sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
 }
 void find_closest_pair(const std::vector<Point> &points) {
     double min_distance = std::numeric_limits<double>::max();
-    Point closest_pair[2];
-
+    Point closest_pair[2] = {{0.0, 0.0}, {0.0, 0.0}};
     for (size_t i = 0; i < points.size() - 1; ++i) {
         for (size_t j = i + 1; j < points.size(); ++j) {
             double distance = calculate_distance(points[i], points[j]);
@@ -49,6 +48,8 @@ int main(int argc, char *argv[]) {
     find_closest_pair(points);
     auto end_time = std::chrono::high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(end_time - start_time);
-    std::cout << "Time taken by brute force solution: " << duration.count() << " ms" << std::endl;
+
+    
+    std::cout << "Time taken by brute force solution: " << duration.count() << " micorseconds" << std::endl;
     return 0;
 }
