@@ -117,7 +117,8 @@ int main(int argc, char *argv[]) {
     std::cout << "Closest pair: (" << result.point1.x << ", " << result.point1.y << ") and ("
               << result.point2.x << ", " << result.point2.y << ")" << std::endl;
     std::cout << "Distance: " << result.distance << std::endl;
-    std::cout << "Time taken by divide-and-conquer solution: " << duration.count() << " ms" << std::endl;
+    std::cout << "Time taken by divide-and-conquer solution: " << duration.count() << " micorseconds" << std::endl;
 
     return 0;
 }
+
