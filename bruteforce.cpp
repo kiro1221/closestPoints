@@ -3,12 +3,11 @@
 #include <cmath>
 #include <vector>
 #include <limits>
-#include <chrono> // For measuring time
+#include <chrono> 
 using namespace std::chrono;
 struct Point {
     int x, y;
 };
-// Function to calculate the Euclidean distance between two points
 double calculate_distance(const Point &a, const Point &b) {
     return sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
 }
