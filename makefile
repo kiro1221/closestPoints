@@ -9,7 +9,7 @@ DIVIDECONQUER_EXEC = divideconquer
 
 # Source files
 CREATE_SRC = create.cpp
-BRUTEFORCE_SRC = BruteForce.cpp
+BRUTEFORCE_SRC = bruteforce.cpp
 DIVIDECONQUER_SRC = DivideAndConquer.cpp
 
 # Object files
